@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viet Fire Kitchen</title>
+  <meta name="description" content="Viet Fire Kitchen — bold Vietnamese flavors, fast, fresh, and fiery." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a class="brand" href="#top">Viet Fire Kitchen</a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours</a>
+        <a href="#location">Location</a>
+        <a class="btn" href="#order">Order Online</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="kicker">Fresh • Fast • Fiery</p>
+        <h1>Bold Vietnamese flavors, made to order.</h1>
+        <p class="subhead">
+          Modern Vietnamese comfort food — pho, banh mi, bowls, and sides — with a “Viet Fire” twist.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#order">Order Online</a>
+          <a class="btn ghost" href="#menu">View Menu</a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge">
+            <strong>Pickup</strong>
+            <span>Quick & easy</span>
+          </div>
+          <div class="badge">
+            <strong>Delivery</strong>
+            <span>Check apps</span>
+          </div>
+          <div class="badge">
+            <strong>Catering</strong>
+            <span>Group orders</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Favorites</h2>
+          <p>Swap these with your real items — this is demo content.</p>
+        </div>
+
+        <div class="grid cards">
+          <article class="card">
+            <h3>Signature Pho</h3>
+            <p>Rich broth, fresh herbs, and your choice of protein.</p>
+            <div class="meta">
+              <span class="tag">Best Seller</span>
+              <span class="price">$</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Fire Banh Mi</h3>
+            <p>Crispy baguette, pickled veg, house sauce, and heat.</p>
+            <div class="meta">
+              <span class="tag">Spicy</span>
+              <span class="price">$</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Rice / Noodle Bowls</h3>
+            <p>Build your bowl with fresh toppings and bold flavors.</p>
+            <div class="meta">
+              <span class="tag">Custom</span>
+              <span class="price">$</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Wings + Sides</h3>
+            <p>Crispy bites, sauces, and classic Vietnamese sides.</p>
+            <div class="meta">
+              <span class="tag">Shareable</span>
+              <span class="price">$</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <p><strong>Next step:</strong> Replace these cards with their real menu categories + prices (I can format it cleanly once you get the menu link or photos).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="hours">
+      <div class="container split">
+        <div>
+          <h2>Hours</h2>
+          <p class="muted">Demo hours — adjust to your real schedule.</p>
+          <ul class="list">
+            <li><span>Mon–Thu</span><span>11:00 AM – 9:00 PM</span></li>
+            <li><span>Fri–Sat</span><span>11:00 AM – 10:00 PM</span></li>
+            <li><span>Sun</span><span>12:00 PM – 8:00 PM</span></li>
+          </ul>
+        </div>
+
+        <div id="location">
+          <h2>Location</h2>
+          <p class="muted">Put your exact address + Google Map embed here.</p>
+          <div class="location-box">
+            <p><strong>Viet Fire Kitchen</strong><br />
+              123 Main Street, Your City, ST 00000<br />
+              (555) 123-4567
+            </p>
+            <a class="btn" href="#order">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="order">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>Ready to order?</h2>
+            <p class="muted">In the real version, these buttons link to Toast / Square / DoorDash / Uber Eats / etc.</p>
+          </div>
+          <div class="cta-buttons">
+            <a class="btn primary" href="#" onclick="return false;">Order Pickup</a>
+            <a class="btn" href="#" onclick="return false;">Order Delivery</a>
+            <a class="btn ghost" href="#contact">Catering</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Demo form (no backend) — looks real for preview.</p>
+        </div>
+
+        <form class="form" onsubmit="return demoSubmit(event)">
+          <div class="row">
+            <label>
+              Name
+              <input required type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input required type="email" placeholder="you@example.com" />
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea required rows="4" placeholder="Ask about catering, hours, menu, etc."></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="tiny muted" id="formMsg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Viet Fire Kitchen</p>
+      <p class="muted">Demo site preview • Built by LinkUp/Weblink</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
